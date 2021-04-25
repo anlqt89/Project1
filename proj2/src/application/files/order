@@ -1,1 +1,5 @@
-Account
+OrderID	CustomerID	CustomerName CustomerMemberShip	OrderDate	PaymentDate	PaymentName	PaymentAccountNumber	PaymentMethod
+Item1Name,price	Item2Name,price	Item3,price
+
+1	123456789	An Lam	Premium	01/01/2001	01/01/2001	An Lam	123456789	Credit Card
+item1,20.20	item2,50.32	

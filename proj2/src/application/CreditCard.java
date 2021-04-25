@@ -17,13 +17,16 @@ public class CreditCard {
 	private Date expiredDate;
 	private String nameHolder;
 	private double balance;
+	private String fileCreditCard;
 	//private BufferedReader reader;
-	
+	{
+		this.fileCreditCard = System.getProperty("user.dir") + "/src/application/files/creditcard";
+	}
 	public boolean verifyAccount() {
 		
 		BufferedReader reader;
 		try {;
-			reader = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/application/files/creditcard"));
+			reader = new BufferedReader(new FileReader(this.fileCreditCard));
 			String line = reader.readLine();
 			line = reader.readLine();
 			String acc[];
@@ -67,12 +70,14 @@ public class CreditCard {
 	
 	public void charge(double amount){
 		this.balance = this.balance - amount;
-		File file = new File(System.getProperty("user.dir") + "/src/application/files/creditcard");
+		File file = new File(this.fileCreditCard);
 		
+		
+		//replace an old string in a specific line from file
 		try {
 			
-			BufferedReader reader = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/application/files/creditcard"));
-			String line = reader.readLine();
+			BufferedReader reader = new BufferedReader(new FileReader(this.fileCreditCard));
+			String line = reader.readLine(); 
 			String OldContent = line;
 			line = reader.readLine();
 			
@@ -127,7 +132,7 @@ public class CreditCard {
 	
 	private double loadBanalce() {
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/application/files/creditcard"));
+			BufferedReader reader = new BufferedReader(new FileReader(this.fileCreditCard));
 			String line = reader.readLine();
 			line = reader.readLine();
 			String acc[];
