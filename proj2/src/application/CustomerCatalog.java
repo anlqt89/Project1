@@ -17,7 +17,7 @@ import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
 
 
-public class reorg extends Application
+public class CustomerCatalog extends Application
 {
     private Label item1Catalog; private Label itemSummary1;
     private Label item2Catalog; private Label itemSummary2;
