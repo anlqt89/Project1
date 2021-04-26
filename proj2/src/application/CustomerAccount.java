@@ -30,7 +30,7 @@ interface CustomerAccount extends Customer {
         return false;
     }
 
-    public static boolean isEmailAvailable(String Email) throws FileNotFoundException { // method to check if username is taken
+    public static boolean isEmailAvailable(String Email) throws FileNotFoundException { // method to check if email is taken
         String userInfo;
         String breakUserInfo[];
         BufferedReader br = null;
