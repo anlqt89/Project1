@@ -1,5 +1,5 @@
-OrderID	CustomerID	CustomerName CustomerMemberShip	OrderDate	PaymentDate	PaymentName	PaymentAccountNumber	PaymentMethod
-Item1Name,price	Item2Name,price	Item3,price
-
-1	123456789	An Lam	Premium	01/01/2001	01/01/2001	An Lam	123456789	Credit Card
-item1,20.20	item2,50.32	
+email[0]	username[1]	password[2]	AccountType[3]	role[4]	FirstName[5]	LastName[6]	address[7]	phonenumber[8]
+a@gmail.com	aman	a1234	regular	customer	Alex	Xela	7893	15th	street	2816589448
+b@gmail	bman	b1235	premium	customer	Ben	Neb	9876	28th	street	8364589663
+CsupSupplier@company.com	Csup	admin	sup	Supplier	first	last	Address Supplier	01
+abcSupplier@company.com	abc	xyz	Sup	supplier	first	last	Address Supplier	01
